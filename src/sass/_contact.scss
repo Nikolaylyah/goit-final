@@ -1,0 +1,325 @@
+address {
+    font-style: normal;
+}
+
+.contacts {
+    background: linear-gradient(to bottom,
+            var(--color-primary) 22%,
+            var(--background-lightsand) 0%);
+
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(to bottom,
+                var(--color-primary) 50%,
+                var(--background-lightsand) 0%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background: linear-gradient(to bottom,
+                var(--color-primary) 24%,
+                var(--background-lightsand) 0%);
+    }
+
+    &__container {
+        @media screen and (min-width: 320px) {
+            width: 320px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
+
+        padding-top: 30px;
+        padding-bottom: 18px;
+    }
+
+    &__card-list {
+        margin-bottom: 36px;
+    }
+
+    &__card {
+        padding: 40px 32px;
+        border-radius: 24px;
+        background-color: var(--color-primary);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+        @media screen and (max-width: 767px) {
+            max-width: 280px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__place-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 20px;
+        width: 80px;
+        height: 16px;
+
+        border-radius: 4px;
+        background-color: var(--background-sand);
+
+        &--green {
+            width: 130px;
+            background-color: var(--background-lightgreen);
+        }
+    }
+
+    &__place {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: var(--color-primary);
+    }
+
+    &__location {
+        margin-bottom: 8px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+
+        color: var(--color-second);
+    }
+
+    &__descr {
+        margin-bottom: 24px;
+        max-width: 179px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+
+        color: var(--color-gray);
+    }
+
+    &__schedule {
+        margin-bottom: 24px;
+        padding-top: 24px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    &__days {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+
+        color: var(--color-second);
+    }
+
+    &__time {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+
+        color: var(--color-middle);
+    }
+
+    &__link-list {
+        padding-top: 24px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+
+        color: var(--color-gray);
+        transition: color var(--timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--color-accent);
+        }
+    }
+
+    &__btn-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 161px;
+        height: 44px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+
+        border: none;
+        border-radius: 22px;
+        color: var(--color-accent);
+        background-color: var(--color-primary);
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background-color: #ecebeb;
+        }
+
+
+        &--red {
+            color: var(--color-primary);
+            background-color: var(--color-accent);
+            transition: background-color var(--timing-function);
+
+            &:hover,
+            &:focus {
+                background-color: var(--background-button);
+            }
+        }
+    }
+
+    &__icon {
+        margin-left: 12px;
+        width: 7.5px;
+        height: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-right: 16px;
+        padding-left: 16px;
+
+        &__card-list {
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__card {
+            width: 224px;
+        }
+
+        &__place-wrap {
+            margin-bottom: 32px;
+            width: 83px;
+            height: 28px;
+
+            &--green {
+                width: 138px;
+            }
+        }
+
+        &__place {
+            font-size: 16px;
+        }
+
+        &__location {
+            @media screen and (max-width: 1199px) {
+                margin-bottom: 12px;
+                font-size: 14px;
+            }
+        }
+
+        &__descr {
+            margin-bottom: 32px;
+
+            max-width: 159px;
+            font-size: 14px;
+            line-height: 1.66;
+        }
+
+        &__schedule {
+            margin-bottom: 32px;
+            padding-top: 32px;
+        }
+
+        &__days,
+        &__time {
+            font-size: 14px;
+        }
+
+        &__link-list {
+            padding-top: 32px;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+
+        &__btn-list {
+            flex-direction: row;
+            justify-content: center;
+            gap: 14.5px;
+        }
+
+        &__btn {
+            margin: 0;
+            width: 174px;
+
+            &--red {
+                width: 191px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__card {
+            width: 368px;
+            padding: 40px 40px;
+        }
+
+        &__location {
+            font-size: 16px;
+        }
+
+        &__descr {
+            max-width: 243px;
+            font-size: 16px;
+            line-height: 1.83;
+        }
+
+        &__days,
+        &__time {
+            font-size: 16px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+
+        &__btn-list {
+            gap: 12px;
+        }
+
+        &__btn {
+            width: 168px;
+
+            &--red {
+                width: 198px;
+            }
+        }
+    }
+}

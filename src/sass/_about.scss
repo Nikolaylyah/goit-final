@@ -1,0 +1,205 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #FFF5F6;
+}
+
+.about__main-wrap {
+    @media screen and (min-width: 1200px) {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        max-width: 1200px;
+        background-image: url(../images/desktop/milk-desktop-1x.png);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            background-image: url(../images/desktop/milk-desktop-2x.png);
+        }
+    }
+}
+
+.about__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-middle);
+    font-family: 'Titan One';
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 580px) {
+        font-size: 30px;
+    }
+}
+
+.about__subtitle {
+    color: var(--color-accent);
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 580px) {
+        font-size: 58px;
+    }
+}
+
+.about__wrap {
+    display: flex;
+
+    @media screen and (max-width: 579px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__wrap-picture {
+    padding-left: 40px;
+}
+
+.about__img {
+    width: 100%;
+    max-width: 280px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 336px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 501px;
+    }
+}
+
+.about__wrap-text {
+    margin-left: 32px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 99px;
+        padding-top: 90px;
+    }
+}
+
+.about__main-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: var(--color-second);
+
+    margin-right: 60px;
+    margin-left: auto;
+    max-width: 220px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 334px;
+        margin-right: 2px;
+        line-height: 1.78;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        max-width: 463px;
+        line-height: 1.75;
+    }
+}
+
+.about__secondary-wrap {
+    background-position: top;
+    background-repeat: no-repeat;
+    min-width: 280px;
+
+    @media screen and (max-width: 479px) {
+        background-image: url(../images/mobile/milk-mobile-1x.png);
+
+
+        // @media (min-device-pixel-ratio:2),
+        // (min-resolution: 2dppx),
+        // (min-resolution: 192dpi) {
+        //     background-image: url(../images/mobile/milk-mobile-2x.png);
+        // }
+    }
+}
+
+.about__secondary-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: var(--color-gray);
+
+    margin-right: 60px;
+    margin-left: auto;
+    max-width: 220px;
+    padding-top: 40px;
+
+    @media screen and (max-width: 479px) {
+        padding-top: 62px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 334px;
+        margin-right: 2px;
+        padding-top: 40px;
+        font-size: 14px;
+        line-height: 1.78;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 463px;
+        line-height: 1.93;
+    }
+}
+
+.about__btn {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: auto;
+    background-color: var(--color-primary);
+
+    border-radius: 22px;
+    width: 176px;
+    height: 44px;
+    border: none;
+
+    @media screen and (max-width: 579px) {
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}
+
+.about__link {
+    color: var(--color-accent);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 37px;
+}
+
+.about__btn:hover {
+    background-color: #ECEBEB;
+}
+
+.about__link-part {
+    margin-left: 13px;
+}
