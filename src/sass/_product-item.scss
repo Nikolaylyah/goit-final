@@ -1,12 +1,14 @@
 .products-list {
-    max-width: 1280px;
+    max-width: 1200px;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
         display: flex;
         margin: -8px;
+
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin: -16px;
         margin-left: auto;
         margin-right: auto;
@@ -22,16 +24,20 @@
     padding-bottom: 40px;
 
     @media screen and (max-width: 767px) {
-        min-width: 280px;
+        width: 280px;
+        
     }
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 3 * 16px) / 3);
+        // width: calc((100% - 3 * 16px) / 3);
+        width: 224px;
+       
         margin: 128px 8px 8px 8px;
     }
 
-    @media screen and (min-width: 1280px) {
-        width: calc((100% - 3 * 32px) / 3);
+    @media screen and (min-width: 1200px) {
+        // width: calc((100% - 3 * 32px) / 3);
+        width: 368px;
         margin: 213px 16px 16px 16px;
     }
 
@@ -99,7 +105,7 @@
             }
         }
 
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1200px) {
             height: 394px;
             margin-top: -213px;
             background-image: url(../images/desktop/ice-cream-desktop-1x.png);
@@ -157,7 +163,7 @@
             }
         }
 
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1200px) {
             height: 394px;
             margin-top: -213px;
             background-image: url(../images/desktop/ice-coffee-desktop-1x.png);
@@ -215,7 +221,7 @@
             }
         }
 
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1200px) {
             height: 394px;
             margin-top: -213px;
             background-image: url(../images/desktop/milkshakes-desktop-1x.png);
@@ -232,17 +238,6 @@
             }
         }
     }
-
-    // &::after {
-    //   display: block;
-    //   margin-top: 32px;
-    //   margin-bottom: 32px;
-    //   content: '';
-    //   height: 6px;
-    //   background-image: url(../images/product-dots.svg);
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    // }
 }
 
 .dots {

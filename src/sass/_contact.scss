@@ -148,7 +148,7 @@ address {
 
     &__btn-list {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         gap: 10px;
     }
 
@@ -194,6 +194,7 @@ address {
     }
 
     &__icon {
+        
         margin-left: 12px;
         width: 7.5px;
         height: 12px;
